@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a86e19e18c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Image Editor</h2>
+        <div class="wrapper">
+            <div class="editor-panel">
+                <h3>Filters</h3>
+                <div class="filter disabled">
+                    <button id="brightness" type="button" class="active">Brightness</button>
+                    <button id="contrast" type="button">Contrast</button>
+                    <button id="invert" type="button">Invert</button>
+                    <button id="hue" type="button">Hue</button>
+                    <button id="saturation" type="button">Saturation</button>
+                    <button id="blur" type="button">Blur</button>
+                </div>
+                <div class="slider">
+                    <div class="filter-info">
+                        <div class="name">Brightness</div>
+                        <div class="value">100%</div>
+                    </div>
+                    <input type="range" class="disabled" value="100" min="0" max="200">
+                </div>
+                <h3>Rotate and Flip</h3>
+                <div class="rotate disabled">
+                    <button id="left" type="button"><i class="fa-solid fa-rotate-left"></i></button>
+                    <button id="right" type="button"><i class="fa-solid fa-rotate-right"></i></i></button>
+                    <button id="vertical" type="button"><i class="fa-solid fa-ellipsis"></i></button>
+                    <button id="horizontal" type="button"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+                <!-- Add these buttons below your existing buttons -->
+                <h3>Color Channels</h3>
+                <div class="color-channels">
+                    <button id="red-channel" type="button">Red Channel</button>
+                    <button id="green-channel" type="button">Green Channel</button>
+                    <button id="blue-channel" type="button">Blue Channel</button>
+                </div>
+            </div>
+    
+            <div class="preview-img">
+                <img src="image-solid.svg" alt="placeholder-image">
+            </div>
+        </div>
+        <div class="controls">
+            <button type="button" class="reset-filter disabled">Rest Filter</button>
+            <div class="row">
+                <input type="file" id="file" hidden>
+                <button type="button" class="choose-img">Choose Image</button>
+                <button type="button" class="save-img">Save Image</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

@@ -59,16 +59,22 @@ body{
     gap: 6px;
 }
 
-.filter button, .rotate button{
+.filter button, .rotate button, .color-channels button{
     border: 1px solid var(--theme-color);
     background-color: #ffffff;
     color: var(--theme-color);
-    padding: 3px;
+    padding: 3px 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
 }
 
-.filter button.active{
+.filter button.active {
+    background-color: var(--theme-color);
+    color: #ffffff;
+}
+
+.color-channels button.active {
     background-color: var(--theme-color);
     color: #ffffff;
 }

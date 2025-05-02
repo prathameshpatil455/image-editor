@@ -35,12 +35,30 @@
                     <button id="vertical" type="button"><i class="fa-solid fa-ellipsis"></i></button>
                     <button id="horizontal" type="button"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                 </div>
-                <!-- Add these buttons below your existing buttons -->
                 <h3>Color Channels</h3>
                 <div class="color-channels">
                     <button class="red-channel" type="button">Red Channel</button>
                     <button class="green-channel" type="button">Green Channel</button>
                     <button class="blue-channel" type="button">Blue Channel</button>
+                </div>
+                <div class="editor-actions" style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
+                    <button type="button" class="scan-malware">Scan for Malware</button>
+                    <!-- <button type="button" class="redact-blur">Redact/Blur Area</button> -->
+                </div>
+                <div class="watermark-section" style="display:none; margin-top: 20px; flex-direction: column; gap: 8px;">
+                    <h3>Add Watermark</h3>
+                    <input type="text" class="watermark-text" placeholder="Enter watermark text">
+                    <select class="watermark-position">
+                        <option value="bottom-right">Bottom Right</option>
+                        <option value="bottom-left">Bottom Left</option>
+                        <option value="top-right">Top Right</option>
+                        <option value="top-left">Top Left</option>
+                        <option value="center">Center</option>
+                    </select>
+                    <div style="display: flex; gap: 8px;">
+                        <button type="button" class="apply-watermark">Apply Watermark</button>
+                        <button type="button" class="remove-watermark">Remove Watermark</button>
+                    </div>
                 </div>
             </div>
     
